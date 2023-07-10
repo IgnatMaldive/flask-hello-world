@@ -1,6 +1,12 @@
 from flask import Flask
 app = Flask(__name__)
 
+# setting routes
+
 @app.route('/')
-def hello_world():
-    return 'Hello, Mundito!'
+def index():
+    return 'índice'
+
+@app.route('/hello')
+def hello():
+    return 'segunda ruta'
